@@ -603,6 +603,10 @@ h2 {
     font-size: 1.8rem;
   }
 
+  .sub-section {
+    margin-top: 7rem;
+  }
+
   .sub-links {
     flex-direction: column;
     margin-top: 6rem;
