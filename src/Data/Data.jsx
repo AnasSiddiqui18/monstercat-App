@@ -1,0 +1,88 @@
+const Data = [
+  {
+    id: 1,
+    voice: "/audios/The-small-things.mp3",
+    title: "The Small Things",
+    small_title: "Conro",
+    minute: "3:35",
+  },
+  {
+    id: 2,
+    voice: "/audios/Without-your-love.mp3",
+    title: "Without Your Love",
+    small_title: "Conro",
+    minute: "3:09",
+  },
+  {
+    id: 3,
+    voice: "/audios/therapy.mp3",
+    title: "Therapy",
+    small_title: "Conro",
+    minute: "3:35",
+  },
+  {
+    id: 4,
+    voice: "/audios/fighter.mp3",
+    title: "Fighters",
+    small_title: "Conro",
+    minute: "3:35",
+  },
+  {
+    id: 5,
+    voice: "/audios/way-up.mp3",
+    title: "Way Up",
+    small_title: "Conro & Nevve",
+    minute: "3:35",
+  },
+  {
+    id: 6,
+    voice: "/audios/waiting.mp3",
+    title: "Waiting",
+    small_title: "Conro",
+    minute: "3:35",
+  },
+  {
+    id: 7,
+    voice: "/audios/dreaming.mp3",
+    title: "Dreaming",
+    small_title: "Conro",
+    minute: "3:35",
+  },
+  {
+    id: 8,
+    voice: "/audios/tattoo.mp3",
+    title: "Tattoo",
+    small_title: "Conro",
+    minute: "3:35",
+  },
+  {
+    id: 9,
+    voice: "/audios/out-for-the-night.mp3",
+    title: "Out for the Night",
+    small_title: "Conro",
+    minute: "3:05",
+  },
+  {
+    id: 10,
+    voice: "/audios/overdue.mp3",
+    title: "Overdue",
+    small_title: "Conro",
+    minute: "2:48",
+  },
+  {
+    id: 11,
+    voice: "/audios/sayit.mp3",
+    title: "Say it",
+    small_title: "Conro",
+    minute: "3:04",
+  },
+  {
+    id: 12,
+    voice: "/audios/here-to-say.mp3",
+    title: "Here to Stay",
+    small_title: "Conro",
+    minute: "2:44",
+  },
+];
+
+export default Data;
