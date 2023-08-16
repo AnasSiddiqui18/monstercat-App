@@ -53,6 +53,7 @@ h2 {
   margin-left: auto;
   max-width: 1050px;
   width: 90%;
+  border: 2px solid red;
 }
 
 .home-background {
