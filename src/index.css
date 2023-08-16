@@ -57,7 +57,7 @@ h2 {
 
 .home-background {
   background: url(/images/hero.png);
-  height: 100vh;
+  height: auto;
   background-size: cover;
   position: absolute;
   background-position: center;
