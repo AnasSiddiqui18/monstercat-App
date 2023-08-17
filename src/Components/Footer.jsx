@@ -1,4 +1,3 @@
-import React from "react";
 import { AiFillYoutube } from "react-icons/ai";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FaTiktok } from "react-icons/fa";
