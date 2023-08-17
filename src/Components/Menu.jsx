@@ -3,7 +3,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FaTiktok } from "react-icons/fa";
 import { AiOutlineTwitter } from "react-icons/ai";
-import { BsTwitch } from "react-icons/bs";
+import { BsChevronUp, BsTwitch } from "react-icons/bs";
 import { BiLogoFacebookCircle } from "react-icons/bi";
 import { BiLogoDiscord } from "react-icons/bi";
 import { BsChevronDown } from "react-icons/bs";
@@ -33,10 +33,10 @@ const Menu = () => {
           <li className="list-item">
             <a href="#" className="flex" onClick={() => setShowSubMenu(0)}>
               MUSIC
-              {subMenu !== null ? (
-                <BsChevronDown className="icon-forward" />
+              {subMenu === 0 && subMenu !== null ? (
+                <BsChevronUp className="icon-up" />
               ) : (
-                <IoIosArrowForward className="icon-forward" />
+                <IoIosArrowForward className="icon-up" />
               )}
             </a>
             {subMenu === 0 && (
@@ -54,15 +54,22 @@ const Menu = () => {
             </a>
           </li>
           <li className="list-item">
-            <a href="#" className="flex">
-              ABOUT <IoIosArrowForward className="icon-forward" />
+            <a href="#" className="flex" onClick={() => setShowSubMenu(1)}>
+              ABOUT
+              {subMenu === 1 && subMenu !== null ? (
+                <BsChevronUp className="icon-up" />
+              ) : (
+                <IoIosArrowForward className="icon-up" />
+              )}
             </a>
-            <ul className="drop-down">
-              <li>OUR MUSIC</li>
-              <li>INSTINCT</li>
-              <li>UNCAGED</li>
-              <li>SILK</li>
-            </ul>
+            {subMenu === 1 && (
+              <ul className="drop-down">
+                <li>OUR MUSIC</li>
+                <li>INSTINCT</li>
+                <li>UNCAGED</li>
+                <li>SILK</li>
+              </ul>
+            )}
           </li>
           <li className="list-item">
             <a href="#" className="flex">
@@ -71,27 +78,41 @@ const Menu = () => {
           </li>
 
           <li className="list-item">
-            <a href="#" className="flex">
-              EVENT <IoIosArrowForward className="icon-forward" />
+            <a href="#" className="flex" onClick={() => setShowSubMenu(2)}>
+              EVENT
+              {subMenu === 2 && subMenu !== null ? (
+                <BsChevronUp className="icon-up" />
+              ) : (
+                <IoIosArrowForward className="icon-up" />
+              )}
             </a>
-            <ul className="drop-down">
-              <li>OUR MUSIC</li>
-              <li>INSTINCT</li>
-              <li>UNCAGED</li>
-              <li>SILK</li>
-            </ul>
+            {subMenu === 2 && (
+              <ul className="drop-down">
+                <li>OUR MUSIC</li>
+                <li>INSTINCT</li>
+                <li>UNCAGED</li>
+                <li>SILK</li>
+              </ul>
+            )}
           </li>
 
           <li className="list-item">
-            <a href="#" className="flex">
-              PROGR <IoIosArrowForward className="icon-forward" />
+            <a href="#" className="flex" onClick={() => setShowSubMenu(3)}>
+              PROGRAMMING
+              {subMenu === 3 && subMenu !== null ? (
+                <BsChevronUp className="icon-up" />
+              ) : (
+                <IoIosArrowForward className="icon-up" />
+              )}
             </a>
-            <ul className="drop-down">
-              <li>OUR MUSIC</li>
-              <li>INSTINCT</li>
-              <li>UNCAGED</li>
-              <li>SILK</li>
-            </ul>
+            {subMenu === 3 && (
+              <ul className="drop-down">
+                <li>OUR MUSIC</li>
+                <li>INSTINCT</li>
+                <li>UNCAGED</li>
+                <li>SILK</li>
+              </ul>
+            )}
           </li>
           <li className="list-item">
             <a href="#" className="flex">
@@ -100,7 +121,7 @@ const Menu = () => {
           </li>
           <li className="list-item">
             <a href="#" className="flex">
-              PARTN
+              PARTNERS
             </a>
           </li>
           <li className="list-item">
@@ -110,7 +131,7 @@ const Menu = () => {
           </li>
           <li className="list-item">
             <a href="#" className="flex">
-              PLAYE
+              PLAYER
             </a>
           </li>
           <li className="list-item">
@@ -120,7 +141,7 @@ const Menu = () => {
           </li>
           <li className="list-item">
             <a href="#" className="flex">
-              LOST
+              LOST CIVILIZATION
             </a>
           </li>
         </ul>
@@ -128,9 +149,9 @@ const Menu = () => {
 
       <div className="bottom">
         <div className="social-fixed">
-          <AiOutlineInstagram classNam className="flex" e="icon-fixed" />
+          <AiOutlineInstagram className="icon-fixed" />
           <FaTiktok className="icon-fixed" />
-          <AiOutlineTwitter classNam className="flex" e="icon-fixed" />
+          <AiOutlineTwitter className="icon-fixed" />
           <BsTwitch className="icon-fixed" />
           <BiLogoFacebookCircle className="icon-fixed" />
           <BiLogoDiscord className="icon-fixed" />
