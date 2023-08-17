@@ -18,17 +18,20 @@ const Header = ({ showMenu }) => {
           <div className="menu">
             <AiOutlineMenu onClick={showMenu} />
           </div>
+          <div className="social-fixed">
+            <AiOutlineInstagram className="icon-fixed" />
+            <FaTiktok className="icon-fixed" />
+            <AiOutlineTwitter className="icon-fixed" />
+            <BsTwitch className="icon-fixed" />
+            <BiLogoFacebookCircle className="icon-fixed" />
+            <BiLogoDiscord className="icon-fixed" />
+            <img
+              src="/images/monster-footer.svg"
+              alt=""
+              className="icon-fixed"
+            />
+          </div>
         </div>
-      </div>
-
-      <div className="social-fixed">
-        <AiOutlineInstagram className="icon-fixed" />
-        <FaTiktok className="icon-fixed" />
-        <AiOutlineTwitter className="icon-fixed" />
-        <BsTwitch className="icon-fixed" />
-        <BiLogoFacebookCircle className="icon-fixed" />
-        <BiLogoDiscord className="icon-fixed" />
-        <img src="/images/monster-footer.svg" alt="" className="icon-fixed" />
       </div>
     </header>
   );

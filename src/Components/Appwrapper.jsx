@@ -17,6 +17,8 @@ const AppWrapper = () => {
         <div className="overlay"></div>
         <div className="content">
           <Menu menu={menu} showMenu={showMenu} />
+          {menu && <div className="menuOverlay" onClick={showMenu}></div>}
+
           <Header showMenu={showMenu} />
           <Home />
         </div>
