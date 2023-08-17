@@ -569,6 +569,67 @@ h2 {
   margin: 0 auto;
 }
 
+.menuBar {
+  position: fixed;
+  background-color: #000;
+  z-index: 1000;
+  width: 400px;
+  padding: 20px;
+  top: 0;
+  right: 0;
+  /* overflow-y: auto; */
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid cyan;
+}
+
+.top img {
+  width: 170px;
+}
+
+.crossIcon {
+  font-size: 30px;
+}
+
+.center {
+  margin-top: 3rem;
+}
+
+.center ul {
+  list-style: none;
+}
+
+.list-item {
+  border: 2px solid red;
+  padding: 10px 0;
+}
+
+.center ul li a {
+  color: var(--main-white);
+  padding: 0 0 15px 0;
+  letter-spacing: 2px;
+}
+
+.drop-down li {
+  padding: 0 0 15px 0;
+  margin-left: 20px;
+  color: var(--secondary-grey);
+  letter-spacing: 3px;
+}
+
+.flex {
+  display: flex;
+}
+
+.icon-forward {
+  font-weight: 800;
+  font-size: 20px;
+}
+
 /** media queries  */
 
 @media (max-width: 1024px) {

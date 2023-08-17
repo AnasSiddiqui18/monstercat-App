@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Home from "./Home";
+import Menu from "./Menu";
 
 const AppWrapper = () => {
   return (
@@ -9,6 +10,7 @@ const AppWrapper = () => {
         <div className="home-background"></div>
         <div className="overlay"></div>
         <div className="content">
+          <Menu />
           <Header />
           <Home />
         </div>
