@@ -7,7 +7,7 @@ import { BsTwitch } from "react-icons/bs";
 import { BiLogoFacebookCircle } from "react-icons/bi";
 import { BiLogoDiscord } from "react-icons/bi";
 
-const Header = () => {
+const Header = ({ showMenu }) => {
   return (
     <header className="header-section">
       <div className="header-container">
@@ -16,7 +16,7 @@ const Header = () => {
             <img src="/images/monstercat-logo.webp" alt="" />
           </div>
           <div className="menu">
-            <AiOutlineMenu />
+            <AiOutlineMenu onClick={showMenu} />
           </div>
         </div>
       </div>

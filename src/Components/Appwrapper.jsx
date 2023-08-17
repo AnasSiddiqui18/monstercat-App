@@ -1,17 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 import Home from "./Home";
 import Menu from "./Menu";
 
 const AppWrapper = () => {
+  const [menu, showmenu] = useState(false);
+
+  const showMenu = () => {
+    showmenu(!menu);
+  };
+
   return (
     <>
       <div className="app-wrapper">
         <div className="home-background"></div>
         <div className="overlay"></div>
         <div className="content">
-          <Menu />
-          <Header />
+          <Menu menu={menu} showMenu={showMenu} />
+          <Header showMenu={showMenu} />
           <Home />
         </div>
       </div>
