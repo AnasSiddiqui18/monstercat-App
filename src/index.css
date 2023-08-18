@@ -799,6 +799,27 @@ h2 {
   .footer-content p {
     font-size: 1.5rem;
   }
+
+  .center ul li a {
+    font-size: 1.4rem;
+  }
+
+  .drop-down li {
+    font-size: 1.4rem;
+  }
+
+  .top img {
+    width: 16rem;
+  }
+
+  .crossIcon {
+    font-size: 25px;
+  }
+
+  .bottom > * {
+    display: flex;
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 700px) {
@@ -873,6 +894,14 @@ h2 {
   .sub-links ul li {
     font-size: 1.3rem;
   }
+
+  .menuBar {
+    width: 350px;
+  }
+
+  .crossIcon {
+    font-size: 25px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -907,6 +936,34 @@ h2 {
 
   .foooter-social {
     flex-wrap: wrap;
+  }
+
+  .menuBar {
+    width: 320px;
+  }
+
+  .top img {
+    width: 15rem;
+  }
+
+  .crossIcon {
+    font-size: 23px;
+  }
+
+  .center ul li a {
+    font-size: 13px;
+  }
+
+  .drop-down li {
+    font-size: 13px;
+  }
+
+  .bottom > * {
+    font-size: 18px;
+  }
+
+  .social-fixed img {
+    width: 18px;
   }
 }
 
@@ -1028,6 +1085,10 @@ h2 {
   .music-left {
     margin-left: unset;
   }
+
+  .crossIcon {
+    font-size: 23px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -1058,5 +1119,34 @@ h2 {
 
   .footer-content p {
     text-align: center;
+  }
+
+  .menuBar {
+    width: 300px;
+  }
+
+  .top img {
+    width: 13rem;
+  }
+
+  .crossIcon {
+    font-size: 20px;
+  }
+
+  .center ul li a {
+    font-size: 12px;
+  }
+
+  .drop-down li {
+    font-size: 12px;
+    margin-top: 1.5rem;
+  }
+
+  .bottom > * {
+    font-size: 17px;
+  }
+
+  .social-fixed img {
+    width: 17px;
   }
 }
